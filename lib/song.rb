@@ -1,6 +1,6 @@
 require 'pry'
 class Song
-  attr_reader :name,:artist,:genre,:count
+  attr_accessor :name,:artist,:genre,:count
   @@artists = []
   @@genres = []
   @@count = 0
