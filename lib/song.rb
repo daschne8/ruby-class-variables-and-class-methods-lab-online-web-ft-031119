@@ -11,10 +11,6 @@ class Song
     @@genres << genre
     @@count += 1
   end
-
-  def self.genre_count
-      @@genres.length
-  end
   def self.count
     @@count
   end
@@ -24,6 +20,13 @@ class Song
   def self.genres
     @@genres.uniq
   end
-
+def self.genre_count
+  gen_hash = {}
+  @@genres.each do |genre|
+    gen_hash[genre] ||= 0
+    gen_hash[genre] += 1
+  end
+  gen_hash
+end
 
 end
