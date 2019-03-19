@@ -39,8 +39,8 @@ class Song
   end
 end
 
-song_list = []
-song_list << Song.new("girl","Beck","Alt")
-song_list << Song.new("Cigaro","SoaD","Metal")
-song_list[0].name
-binding.pry
+# song_list = []
+# song_list << Song.new("girl","Beck","Alt")
+# song_list << Song.new("Cigaro","SoaD","Metal")
+# song_list[0].name
+# binding.pry
