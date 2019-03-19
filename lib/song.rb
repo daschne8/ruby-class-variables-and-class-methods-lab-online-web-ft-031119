@@ -5,10 +5,10 @@ class Song
   @@genres = []
   @@count = 0
   def self.new(name,artist,genre)
-    self.@name = name
-    self.@artist = artist
+    @name = name
+    @artist = artist
     @@artists << artist
-    self.@genre = genre
+    @genre = genre
     @@genres << genre
     @@count += 1
   end
