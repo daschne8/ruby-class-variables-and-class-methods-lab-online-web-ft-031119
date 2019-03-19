@@ -20,13 +20,20 @@ class Song
   def self.genres
     @@genres.uniq
   end
-def self.genre_count
-  gen_hash = {}
-  @@genres.each do |genre|
-    gen_hash[genre] ||= 0
-    gen_hash[genre] += 1
+  def self.genre_count
+    gen_hash = {}
+    @@genres.each do |genre|
+      gen_hash[genre] ||= 0
+      gen_hash[genre] += 1
+    end
+    gen_hash
   end
-  gen_hash
-end
-
+  def self.artist_count
+    art_hash = {}
+    @@artists.each do |artist|
+      art_hash[artist] ||= 0
+      art_hash[artist] += 1
+    end
+    art_hash
+  end
 end
