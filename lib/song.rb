@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_reader :name,:artist,:genre,:count
   @@artists = []
@@ -37,3 +38,4 @@ class Song
     art_hash
   end
 end
+binding.pry
