@@ -6,7 +6,9 @@ class Song
   def new(name,artist,genre)
     @name = name
     @artist = artist
+    @@artists.include?(artist) ? : @@artist << artist
     @genre = genre
+    @@genre.include?(genre) ? :@@genre << genre
   end
 
 end
