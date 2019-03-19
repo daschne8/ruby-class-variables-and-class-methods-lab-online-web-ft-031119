@@ -6,13 +6,13 @@ class Song
   def new(name,artist,genre)
     @name = name
     @artist = artist
-    @@artists.include?(artist) ? : @@artist << artist
+    @@artists.include?(artist) ? : @@artists << artist
     @genre = genre
-    @@genre.include?(genre) ? :@@genre << genre
+    @@genres.include?(genre) ? :@@genres << genre
   end
-
+  
   def self.genre_count
       @@genres.length
   end
-
+    
 end
