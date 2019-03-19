@@ -11,4 +11,8 @@ class Song
     @@genre.include?(genre) ? :@@genre << genre
   end
 
+  def self.genre_count
+      @@genres.length
+  end
+
 end
