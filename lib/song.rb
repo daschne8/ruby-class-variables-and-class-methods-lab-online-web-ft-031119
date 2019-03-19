@@ -38,4 +38,9 @@ class Song
     art_hash
   end
 end
+
+song_list = []
+song_list << Song.new("girl","Beck","Alt")
+song_list << Song.new("Cigaro","SoaD","Metal")
+
 binding.pry
